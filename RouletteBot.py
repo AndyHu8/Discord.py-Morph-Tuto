@@ -18,7 +18,7 @@ class MyClient(discord.Client): #erbt von Discord Client
             await message.channel.send('''Für Roulette: $roulette Gesetzt eingeben, wobei Gesetzt =
             \n black \n red \n number''')
         
-        if message.content.startswith("$roulette"):
+        if message.content.startswith("!roulette"):
             gesetzt = message.content.split(' ')[1]
             gesetzt_parameter = -3
 
